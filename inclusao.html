@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia do Dublador</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <style>
+        :root {
+            --primary-color: #5e42a6;
+            --secondary-color: #9b59b6;
+            --accent-color: #8e44ad;
+            --text-color: #f2f2f2;
+            --light-bg: #2c2c2c;
+            --dark-bg: #1a1a1a;
+            --margin-size: 15%;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background-color: var(--dark-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .main-content {
+            margin: 0 var(--margin-size);
+            padding: 20px 0;
+        }
+        
+        /* Menu/Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.3s;            
+        }
+
+        .logo-icon img{
+            width: 60px;
+        }
+        
+        .logo:hover .logo-icon {
+            transform: rotate(15deg);
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .inclusion-hero {
+            height: 60vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 80px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .inclusion-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 150px;
+        }
+        
+        .inclusion-hero-content {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+        
+        .inclusion-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .inclusion-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Inclusion Waves */
+        .inclusion-section {
+            position: relative;
+            padding: 100px 0;
+            margin: 80px 0;
+        }
+        
+        .inclusion-wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%235b9bd5" fill-opacity="0.1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: bottom;
+            z-index: -1;
+        }
+        
+        .inclusion-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .inclusion-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .inclusion-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .inclusion-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+        }
+        
+        .inclusion-content {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        
+        .inclusion-item {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .inclusion-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .inclusion-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .inclusion-icon {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem; /* Ajustado para ícones genéricos */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .inclusion-text {
+            flex: 1;
+        }
+        
+        .inclusion-text h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .inclusion-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        /* Seção de Destaque */
+        .highlight-section {
+            position: relative;
+            padding: 100px 0;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            margin: 100px 0;
+        }
+        
+        .highlight-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .highlight-title {
+            margin-bottom: 50px;
+        }
+        
+        .highlight-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px; /* Aumentado o espaçamento */
+            margin: 60px 0;
+        }
+        
+        .icon-item { /* Renomeado de puzzle-piece para icon-item */
+            width: 100px; /* Aumentado o tamanho */
+            height: 100px; /* Aumentado o tamanho */
+            background-color: white;
+            border-radius: 50%; /* Alterado para círculo */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem; /* Tamanho do ícone interno */
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: scale(0.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .icon-item:nth-child(1) { background-color: #ffd966; animation: iconPop 0.6s 0.2s forwards; }
+        .icon-item:nth-child(2) { background-color: #70ad47; animation: iconPop 0.6s 0.4s forwards; }
+        .icon-item:nth-child(3) { background-color: white; animation: iconPop 0.6s 0.6s forwards; }
+        
+        @keyframes iconPop {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .highlight-text {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Seção de Obras Icônicas */
+        .iconic-works-section {
+            padding: 80px 0;
+            background-color: var(--dark-bg); /* Fundo escuro */
+        }
+
+        .iconic-works-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .iconic-works-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .iconic-works-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+        }
+
+        .iconic-works-title p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .iconic-works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .work-card {
+            background-color: var(--dark-bg); /* Fundo escuro */
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5); /* Sombra mais forte */
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .work-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.7); /* Sombra intensificada no hover */
+        }
+
+        .work-card-image {
+            width: 100%;
+            height: 200px;
+            background-color: #333; /* Placeholder mais escuro */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Garante que a imagem não ultrapasse o container */
+        }
+
+        .work-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+        }
+        
+        .work-card-image .placeholder-text {
+            color: #757575;
+            font-style: italic;
+        }
+
+        .work-card-content {
+            padding: 25px;
+            text-align: left;
+            flex-grow: 1;
+            color: var(--text-color); /* Texto claro */
+        }
+
+        .work-card-content h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .work-card-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            color: var(--text-color); /* Texto claro */
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .inclusion-hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .inclusion-item {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .inclusion-item:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .inclusion-icon {
+                width: 100px;
+                height: 100px;
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                margin: 0 10%;
+            }
+            
+            .inclusion-hero {
+                height: 50vh;
+            }
+            
+            .inclusion-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .inclusion-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .inclusion-title h2 {
+                font-size: 2rem;
+            }
+            
+            .inclusion-text h3 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .main-content {
+                margin: 0 5%;
+            }
+            
+            .inclusion-hero {
+                height: 40vh;
+                clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            }
+            
+            .puzzle-piece {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 50px var(--margin-size) 20px;            
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary-color);
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #ddd;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .name-input {
+            display: flex;
+            margin-top: 15px;
+        }
+        
+        .name-input input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 14px;
+        }
+        
+        .name-input button {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 0 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .name-input button:hover {
+            background-color: #e6c44d;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="https://cdn-icons-png.flaticon.com/512/8092/8092175.png" alt=""></div>
+                    
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="inclusao.html">O Dia do Dublador</a></li>
+                    <li><a href="historias.html">Histórias</a></li>
+                    <li><a href="direitos.html">Direitos e Políticas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="inclusion-hero">
+            <div class="inclusion-hero-content">
+                <h1>Celebrando as Vozes do Brasil</h1>
+                <p>Descubra a importância do Dia do Dublador e o impacto desses artistas na cultura e entretenimento.</p>
+            </div>
+        </section>
+        
+        <!-- Seção de Conteúdo sobre o Dia do Dublador -->
+        <section class="inclusion-section">
+            <div class="inclusion-wave"></div>
+            <div class="inclusion-container">
+                <div class="inclusion-title">
+                    <h2>Dia do Dublador: Uma Data Especial</h2>
+                    <p>Entenda a origem, o significado e a relevância desta celebração para os profissionais da voz.</p>
+                </div>
+                
+                <div class="inclusion-content">
+                    <!-- Item 1: Origem e Comemoração -->
+                    <div class="inclusion-item">
+                        <div class="inclusion-icon">📅</div>
+                        <div class="inclusion-text">
+                            <h3>Origem e Quando é Comemorado</h3>
+                            <p>O Dia do Dublador é comemorado anualmente em <strong>29 de junho</strong>. A data foi escolhida em homenagem ao ator e dublador Waldemar de Moraes, uma figura pioneira e de grande importância para a dublagem brasileira, falecido nessa data em 1980. A celebração busca reconhecer e valorizar o trabalho desses artistas.</p>
+                            <p>Embora não seja um feriado oficial, a data é amplamente divulgada e celebrada por fãs, profissionais da área e veículos de comunicação, destacando a magia que as vozes trazem para personagens icônicos.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2: Importância da Dublagem -->
+                    <div class="inclusion-item">
+                        <div class="inclusion-icon">🌟</div>
+                        <div class="inclusion-text">
+                            <h3>A Importância da Dublagem</h3>
+                            <p>A dublagem desempenha um papel crucial na acessibilidade e na imersão cultural. Ela permite que obras audiovisuais de todo o mundo sejam apreciadas por um público mais amplo, transpondo barreiras linguísticas.</p>
+                            <p>No Brasil, a dublagem é reconhecida internacionalmente por sua alta qualidade técnica e artística, com profissionais que emprestam não apenas suas vozes, mas também talento interpretativo, adaptando emoções e contextos para a nossa realidade cultural.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3: Principais Figuras e Legado -->
+                    <div class="inclusion-item">
+                        <div class="inclusion-icon">🏆</div>
+                        <div class="inclusion-text">
+                            <h3>Principais Figuras e Legado</h3>
+                            <p>O Brasil possui um vasto panteão de dubladores talentosos que marcaram gerações. Nomes como Orlando Drummond (Scooby-Doo, Popeye), Garcia Júnior (He-Man, Pica-Pau), Wendel Bezerra (Goku, Bob Esponja), Guilherme Briggs (Buzz Lightyear, Superman) e Cecília Lemes (Chiquinha) são apenas alguns exemplos de artistas que se tornaram referências.</p>
+                            <p>O legado desses profissionais vai além do entretenimento, influenciando a forma como consumimos cultura e criando laços afetivos com personagens que se tornam parte de nossas vidas através de suas vozes inesquecíveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Destaque: A Arte da Dublagem -->
+        <section class="highlight-section">
+            <div class="highlight-container">
+                <div class="highlight-title">
+                    <h2>A Arte por Trás das Vozes</h2>
+                    <p>A dublagem é uma forma de arte complexa que exige talento, técnica e paixão.</p>
+                </div>
+                
+                <div class="highlight-icons">
+                    <div class="icon-item">🎤</div> <!-- Ícone de Microfone -->
+                    <div class="icon-item">🎭</div> <!-- Ícone de Máscaras de Teatro -->
+                    <div class="icon-item">🎬</div> <!-- Ícone de Claquete -->
+                </div>
+                
+                <div class="highlight-text">
+                    <p>Dublar não é apenas traduzir falas, mas recriar interpretações, adaptar piadas e expressões culturais, e sincronizar a voz com os movimentos labiais dos personagens de forma convincente. É um trabalho que exige estudo, ensaio e uma profunda compreensão da arte de atuar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Obras Icônicas Dubladas -->
+        <section class="iconic-works-section">
+            <div class="iconic-works-container">
+                <div class="iconic-works-title">
+                    <h2>Obras que Marcaram Época pela Dublagem</h2>
+                    <p>Algumas produções se tornaram inesquecíveis no Brasil graças ao talento de nossos dubladores, conquistando um lugar especial no coração do público.</p>
+                </div>
+                <div class="iconic-works-grid">
+                    <!-- Card 1: Exemplo Desenho -->
+                    <div class="work-card">
+                        <div class="work-card-image">
+                            <img src="https://jpimg.com.br/uploads/2018/04/dragon-ball-z.jpg" alt="Dragon Ball Z">
+                        </div>
+                        <div class="work-card-content">
+                            <h3>Dragon Ball Z</h3>
+                            <p>A dublagem brasileira de Dragon Ball Z é um fenômeno cultural. Vozes como a de Wendel Bezerra (Goku) e outros se tornaram sinônimo dos personagens, com bordões e entonações que são imitados e celebrados por fãs de todas as idades até hoje.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Exemplo Série -->
+                    <div class="work-card">
+                        <div class="work-card-image">
+                            <img src="https://imagenes.elpais.com/resizer/v2/WZF3MMB4ONHUTB5KBSMFZ7L2OI.JPG?auth=f7528b0d674a73328421e444a643e8f7a15b5329e4cfc3d364313fefbee3e08c&width=1200" alt="Chaves">
+                        </div>
+                        <div class="work-card-content">
+                            <h3>Chaves</h3>
+                            <p>A série mexicana conquistou o Brasil de forma avassaladora, e grande parte desse sucesso se deve à genialidade da dublagem. As vozes de Marcelo Gastaldi (Chaves), Cecília Lemes (Chiquinha), e todo o elenco, criaram uma identidade única que é amada por gerações.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Exemplo Filme -->
+                    <div class="work-card">
+                        <div class="work-card-image">
+                            <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2021/06/shrek-0.jpg?quality=70&strip=info&resize=1080,565&crop=1" alt="Shrek">
+                        </div>
+                        <div class="work-card-content">
+                            <h3>Shrek</h3>
+                            <p>A franquia Shrek teve suas piadas e referências culturais brilhantemente adaptadas na dublagem brasileira. Bussunda como Shrek nos primeiros filmes e as vozes de personagens como Burro (Mário Jorge) e Gato de Botas (Alexandre Moreno) foram cruciais para o apelo cômico e popularidade dos filmes no país.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4: Outro Exemplo (Desenho/Animação) -->
+                    <div class="work-card">
+                        <div class="work-card-image">
+                            <img src="https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/5f19bb0c-25bb-11eb-aa6e-9587410378a2/Pica-Pau-YouTube2020_banner.jpg" alt="Pica-Pau">
+                        </div>
+                        <div class="work-card-content">
+                            <h3>Pica-Pau</h3>
+                            <p>As diversas fases do Pica-Pau tiveram dublagens memoráveis no Brasil, especialmente com Garcia Júnior. A risada icônica e as adaptações de nomes e situações tornaram o personagem um clássico da TV brasileira, muito por conta da personalidade conferida pela dublagem.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Exemplo Filme -->
+                    <div class="work-card">
+                        <div class="work-card-image">
+                            <img src="https://m.media-amazon.com/images/S/pv-target-images/99fa5db6db0f04676a7cd689a429bfe12be345b034c29185a13e4324cef85787._SX1080_FMjpg_.jpg" alt="Madagascar">
+                        </div>
+                        <div class="work-card-content">
+                            <h3>Madagascar</h3>
+                            <p>A franquia 'Madagascar' cativou o Brasil com uma dublagem vibrante e cheia de personalidade. A escolha de vozes e a adaptação de piadas para o contexto nacional, especialmente com os pinguins e o Rei Julien, foram essenciais para criar uma forte conexão com o público, tornando os filmes um grande sucesso de bilheteira e gerando bordões memoráveis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Exemplo Filme -->
+                    <div class="work-card">
+                        <div class="work-card-image">
+                            <img src="https://observatoriodocinema.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=1280&height=720&format=.jpg&quality=91&imagick=/wp-content/uploads/2018/02/incredibles.jpg" alt="Os Incríveis">
+                        </div>
+                        <div class="work-card-content">
+                            <h3>Os Incríveis</h3>
+                            <p>A dublagem brasileira de 'Os Incríveis' foi fundamental para o seu sucesso, trazendo carisma e brasilidade aos super-heróis. As vozes escolhidas, como a de Márcio Seixas para o Sr. Incrível e Hércules Franco para o Gelado, e a adaptação inteligente dos diálogos e do humor, ajudaram a consolidar o filme como um favorito entre o público brasileiro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Site dedicado à comemoração <br> do dia do dublador,<br> oferecendo informações uteis.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="index.html">Início</a>
+                <a href="inclusao.html">O Dia do Dublador</a>
+                <a href="historias.html">Histórias</a>
+                <a href="direitos.html">Direitos e Políticas</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Notificações</h3>
+                <p>Cadastre seu nome para receber nossas atualizações:</p>
+                <div class="name-input">
+                    <input type="text" placeholder="Seu nome">
+                    <button>Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+                <p>&copy; 2025 Dia do Dublador - Todos os direitos reservados | <strong>Desenvolvido por: Matheus Souza Silva</strong> <br> <br><strong>Universidade Católica De Brasília</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        // Animação de aparecimento dos itens ao rolar
+        document.addEventListener('DOMContentLoaded', function() {
+            const inclusionItems = document.querySelectorAll('.inclusion-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            inclusionItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
